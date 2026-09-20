@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="研究・大学生活のためのスタートページ。論文検索、大学関連サービス、研究ツールへのリンク集。">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light dark">
+  <title>Start | 佐々木 正吾</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/style.css?v=6">
+  <script src="../assets/js/theme.js?v=2"></script>
+  <script src="../assets/js/links.js" defer></script>
+  <script src="../assets/js/start.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header start-header wrap">
+    <a class="wordmark" href="../">佐々木 正吾<span>東京科学大学</span></a>
+    <div class="header-actions"><a class="back-link" href="../">プロフィール</a><button class="theme-toggle" type="button" hidden>表示：自動</button></div>
+  </header>
+  <main id="main" class="start-main wrap">
+    <div class="start-title"><h1>研究・大学生活のリンク集</h1></div>
+    <form id="link-search" role="search" aria-label="登録リンクを検索">
+      <label class="search-label" for="search">リンクを検索</label>
+      <div class="search-row">
+        <div class="search-field"><input id="search" type="search" placeholder="サービス名・キーワードを入力" autocomplete="off" spellcheck="false" aria-describedby="search-help" aria-controls="link-groups" enterkeyhint="go"><button id="clear-search" class="clear-button" type="button" aria-label="検索をクリア" hidden>クリア</button></div>
+        <button id="web-search" class="web-button" type="button" disabled>GoogleでWeb検索 <span aria-hidden="true">↗</span></button>
+      </div>
+      <p id="search-help" class="search-help"><span><kbd>↑</kbd><kbd>↓</kbd>リンクを選択</span><span><kbd>Enter</kbd>選択リンクを開く</span><span><kbd>/</kbd>検索へ</span><span><kbd>Esc</kbd>クリア</span></p>
+    </form>
+    <div class="results-bar"><p id="result-count">リンクを読み込んでいます…</p><p>同じタブで開きます</p></div>
+    <p id="selection-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+    <div id="link-groups" class="link-groups"></div>
+    <div id="no-results" class="no-results" hidden><h2>該当するリンクがありません</h2><p>キーワードを変更するか、「GoogleでWeb検索」を選んでください。</p></div>
+    <noscript><p>リンク集の表示にはJavaScriptが必要です。ブラウザの設定で有効にしてください。</p><p><a href="https://scholar.google.com/">Google Scholar</a> · <a href="https://cir.nii.ac.jp/">CiNii Research</a> · <a href="https://github.com/">GitHub</a></p></noscript>
+  </main>
+  <footer class="site-footer wrap"><span>佐々木 正吾 · スタートページ</span><span>Research / University / Tools / Projects / Other</span></footer>
+</body>
+</html>
